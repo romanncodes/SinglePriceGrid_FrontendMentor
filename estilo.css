@@ -1,0 +1,98 @@
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --BrightYellow: hsl(71, 73%, 54%);
+  --LightGray: hsl(204, 43%, 93%);
+  --GrayishBlue: hsl(218, 22%, 67%);
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+}
+body {
+  background: var(--LightGray);
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.container {
+  border-radius: 8px;
+  background-color: white;
+  margin: 4.4em 1.6em;
+  box-shadow: 1px 1px 7px rgb(133, 132, 132);
+}
+.card-join {
+  margin: 0;
+  padding: 1.1em;
+}
+
+.card-join h3 {
+  color: var(--Cyan);
+  font-weight: 400;
+}
+.card-join h4 {
+  color: var(--BrightYellow);
+}
+.card-join p {
+  color: var(--GrayishBlue);
+  line-height: 1.8em;
+  font-size: 0.9em;
+  font-weight: 100;
+}
+
+.card-subs {
+  margin: 0;
+  padding: 1.3em 1.3em;
+  background: var(--Cyan);
+  color: var(--LightGray);
+  line-height: 1.3em;
+}
+.card-subs h4 {
+  margin: 1em 0em 0em;
+}
+.card-subs p {
+  margin: 0;
+}
+.pago {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.pago h1 {
+  margin-right: 0.4em;
+  color: white;
+}
+
+.pago span {
+  color: var(--LightGray);
+}
+button {
+  background-color: hsl(71, 73%, 54%);
+  border: 0;
+  width: 100%;
+  margin: 2em 0 0 0;
+  font-family: "Karla", sans-serif;
+  padding: 1.2em;
+  border-radius: 5px;
+  color: white;
+  box-shadow: 1px 1px 7px rgb(133, 132, 132);
+}
+.card-why {
+  background: var(--GrayishBlue);
+  padding: 1em;
+  color: white;
+  padding-bottom: 2em;
+  border-radius: 0 0 8px 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .info {
+    display: flex;
+    justify-content: center;
+  }
+  .card-subs {
+    width: 50%;
+    border-radius: 0 0 0 8px;
+  }
+  .card-why {
+    width: 50%;
+    border-radius: 0 0 8px 0;
+  }
+}
